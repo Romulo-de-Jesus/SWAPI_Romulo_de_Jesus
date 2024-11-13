@@ -1,4 +1,4 @@
-name: Test Nave 8
+name: Test Nave 5
 
 on: [push, pull_request]
 
@@ -19,4 +19,4 @@ jobs:
         run: npm install
 
       - name: Run starship test
-        run: npm test -- -t 'Buscar dados da nave 8'
+        run: npm test -- -t 'Buscar dados da nave 5'
