@@ -32,6 +32,6 @@ describe('Testes da API SWAPI', () => {
     expect(response.status).toBe(200);
     expect(response.data.name).toBeDefined();
 
-    console.log('Dados da nave 8:', response.data)
+    console.log('Dados do personagem 1:', response.data)
   });
 });
