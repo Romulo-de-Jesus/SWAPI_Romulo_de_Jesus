@@ -59,12 +59,12 @@ describe('Testes da API SWAPI', () => {
     console.log('Dados do veículo 8:', response.data)
   });
 
-  test('Buscar filme 1', async () => {
-    const response = await axios.get(`${BASE_URL}/films/1/`);
+  test('Buscar filme 2', async () => {
+    const response = await axios.get(`${BASE_URL}/films/2/`);
     expect(response.status).toBe(200);
     expect(response.data.name).toBeDefined();
 
-    console.log('Dados do filme 1:', response.data)
+    console.log('Dados do filme 2:', response.data)
   });
 
   test('Buscar planeta 1', async () => {
