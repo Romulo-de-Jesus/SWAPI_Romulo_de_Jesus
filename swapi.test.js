@@ -34,4 +34,28 @@ describe('Testes da API SWAPI', () => {
 
     console.log('Dados do personagem 1:', response.data)
   });
+
+  test('Buscar personagem 2', async () => {
+    const response = await axios.get(`${BASE_URL}/people/2/`);
+    expect(response.status).toBe(200);
+    expect(response.data.name).toBeDefined();
+
+    console.log('Dados do personagem 2:', response.data)
+  });
+
+  test('Buscar veiculo 7', async () => {
+    const response = await axios.get(`${BASE_URL}/vehicles/7/`);
+    expect(response.status).toBe(200);
+    expect(response.data.name).toBeDefined();
+
+    console.log('Dados do veículo 7:', response.data)
+  });
+
+  test('Buscar veiculo 8', async () => {
+    const response = await axios.get(`${BASE_URL}/vehicles/8/`);
+    expect(response.status).toBe(200);
+    expect(response.data.name).toBeDefined();
+
+    console.log('Dados do veículo 8:', response.data)
+  });
 });
