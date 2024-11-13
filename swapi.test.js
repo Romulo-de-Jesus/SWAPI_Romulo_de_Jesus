@@ -11,23 +11,23 @@ describe('Testes da API SWAPI', () => {
     console.log('Dados da nave 9:', response.data)
   });
 
-  test('Buscar dados da nave 8', async () => {
-    const response = await axios.get(`${BASE_URL}/starships/8/`);
+  test('Buscar dados da nave 5', async () => {
+    const response = await axios.get(`${BASE_URL}/starships/5/`);
     expect(response.status).toBe(200);
     expect(response.data.name).toBeDefined();
 
-    console.log('Dados da nave 8:', response.data)
+    console.log('Dados da nave 5:', response.data)
   });
 
-  test('Buscar dados da nave 7', async () => {
-    const response = await axios.get(`${BASE_URL}/starships/7/`);
+  test('Buscar dados da nave 3', async () => {
+    const response = await axios.get(`${BASE_URL}/starships/3/`);
     expect(response.status).toBe(200);
     expect(response.data.name).toBeDefined();
 
-    console.log('Dados da nave 7:', response.data)
+    console.log('Dados da nave 3:', response.data)
   });
 
-  test('Buscar Lista de personagens 1', async () => {
+  test('Buscar personagem 1', async () => {
     const response = await axios.get(`${BASE_URL}/people/1/`);
     expect(response.status).toBe(200);
     expect(response.data.name).toBeDefined();
